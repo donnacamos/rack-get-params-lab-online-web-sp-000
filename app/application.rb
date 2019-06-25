@@ -24,7 +24,8 @@ class Application
     end 
     elsif req.path.match(/add/) 
       search_term = req.params["item"]
-      if @@items.include?()
+      if @@items.include?(search_term) 
+        
     else
       resp.write "Path Not Found"
     end
